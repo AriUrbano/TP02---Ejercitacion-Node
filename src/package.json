@@ -1,0 +1,19 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "main": "ej01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AriUrbano/TP02---Ejercitacion-Node.git"
+  },
+  "author": "Urbano_Muhafra_Toranzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AriUrbano/TP02---Ejercitacion-Node/issues"
+  },
+  "homepage": "https://github.com/AriUrbano/TP02---Ejercitacion-Node#readme",
+  "description": ""
+}
