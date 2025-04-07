@@ -8,13 +8,15 @@ async function testOMDB() {
     resultado = await OMDBSearchByPage("cars", 1);
     console.log("OMDBSearchByPage:", resultado);
     
-    resultado = await OMDBSearchComplete("matrix");
+    resultado = await OMDBSearchComplete("cars");
     console.log("OMDBSearchComplete - Cantidad total:", resultado.cantidadTotal);
     
-    if (resultado.datos.length > 0) {
+    try {
         const imdbID = resultado.datos[0].imdbID;
         resultado = await OMDBGetByImdbID(imdbID);
         console.log("OMDBGetByImdbID:", resultado);
+    } catch (error) {
+        console.error("No se encontraron resultados para mostrar detalles");
     }
 }
 
