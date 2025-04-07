@@ -10,15 +10,9 @@ function parsearUrl(laURL) {
         pathname: "",
         parameters: {}
     };
-    
-    try {
         const urlObj = new URL(laURL);
         returnValue.host = urlObj.protocol + "//" + urlObj.host;
         returnValue.pathname = urlObj.pathname;
         returnValue.parameters = Object.fromEntries(urlObj.searchParams.entries());
-    } catch (error) {
-        console.error("Error al parsear URL:", error);
-    }
-    
     return returnValue;
 }
